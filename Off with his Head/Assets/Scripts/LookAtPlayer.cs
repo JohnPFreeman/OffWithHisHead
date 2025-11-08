@@ -8,6 +8,6 @@ public class LookAtPlayer
 {
         void Start()
     {
-        int x = Input.
+        //int x = Input.
     }
 }
