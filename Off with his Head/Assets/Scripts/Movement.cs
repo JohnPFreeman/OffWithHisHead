@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeadMovement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
+    public GameObject headObject;
     private GameManager gm;
 
     private Rigidbody rb;
@@ -11,8 +12,9 @@ public class HeadMovement : MonoBehaviour
     private Vector3 v;
 
     private bool headMode = false;
-    private bool xMovable = false;
-    private bool yMovable = false;
+    private bool xMostRecent = false;
+
+    public bool isHead = true;
 
     public GameObject sprite;
 
@@ -20,7 +22,7 @@ public class HeadMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm = gameObject.GetComponent<GameManager>();
+        gm = headObject.GetComponent<GameManager>();
 
         rb = GetComponent<Rigidbody>();
 
@@ -68,11 +70,11 @@ public class HeadMovement : MonoBehaviour
 
         }
 
-        if (!yMovable)
+        if (xMostRecent & (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
            v[2] = 0;
-        }
-        if (!xMovable)
+
+        } else if (!xMostRecent & (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
         {
             v[0] = 0;
         }
@@ -85,7 +87,7 @@ public class HeadMovement : MonoBehaviour
         
         
 
-        v = v.normalized * moveSpeed * (headMode ? 1 : 0);
+        v = v.normalized * moveSpeed * (headMode == isHead ? 1 : 0);
 
         transform.position += v;
 
@@ -96,28 +98,13 @@ public class HeadMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
-            xMovable = true;
-            yMovable = false;
-            //Debug.Log(xMostRecent);
+            xMostRecent = true;
+            Debug.Log(xMostRecent);
         }
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
         {
-            xMovable = false;
-            yMovable = true;
-            //Debug.Log(xMostRecent);
-        }
-
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-        {
-            xMovable = false;
-            yMovable = true;
-            //Debug.Log(xMostRecent);
-        }
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
-        {
-            xMovable = true;
-            yMovable = false;
-            //Debug.Log(xMostRecent);
+            xMostRecent = false;
+            Debug.Log(xMostRecent);
         }
     }
 
