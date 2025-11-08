@@ -9,9 +9,11 @@ public class LookAtPlayer
     void Start()
     {
         //int x = Input.
+        //print(gameObject.name);
+        
     }
     void Update()
     {
-        //gameObject.
+        //gameObject.rot
     }
 }
