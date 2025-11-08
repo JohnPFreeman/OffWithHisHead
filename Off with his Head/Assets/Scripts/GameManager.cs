@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             headMode = !headMode;
-            Debug.Log(headMode);
+            
         }
     }
 }
