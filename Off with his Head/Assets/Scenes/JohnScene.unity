@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 1733098595}
   - component: {fileID: 1733098594}
   m_Layer: 0
-  m_Name: body
+  m_Name: bodySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

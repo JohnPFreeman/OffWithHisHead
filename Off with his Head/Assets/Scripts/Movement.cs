@@ -79,7 +79,7 @@ public class Movement : MonoBehaviour
             v[0] = 0;
         }
 
-        if (headMode)
+        if (headMode == isHead)
         {
             updateRotation();
         }
@@ -99,12 +99,12 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             xMostRecent = true;
-            Debug.Log(xMostRecent);
+            //Debug.Log(xMostRecent);
         }
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
         {
             xMostRecent = false;
-            Debug.Log(xMostRecent);
+            //Debug.Log(xMostRecent);
         }
     }
 
@@ -113,18 +113,22 @@ public class Movement : MonoBehaviour
         if (v == new Vector3(1, 0, 0))
         {
             sprite.transform.localEulerAngles = new Vector3(90, 90, 0);
+            Debug.Log("RIGHT");
                 
         } else if (v == new Vector3(-1, 0, 0))
         {
             sprite.transform.localEulerAngles = new Vector3(90,-90, 0);
+            Debug.Log("LEFT");
 
         } else if (v == new Vector3(0, 0, 1))
         {
             sprite.transform.localEulerAngles = new Vector3(90, 0, 0);
+            Debug.Log("UP");
 
         } else if (v == new Vector3(0, 0, -1))
         {
             sprite.transform.localEulerAngles = new Vector3(90, 180, 0);
+            Debug.Log("DOWN");
 
         }
     }
