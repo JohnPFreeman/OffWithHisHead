@@ -11,9 +11,9 @@ public class Movement : MonoBehaviour
     private float moveSpeed = .25f;
     private Vector3 v;
 
-    private bool headMode = false;
     private bool xMostRecent = false;
 
+    private bool headMode = false;
     public bool isHead = true;
 
     public GameObject sprite;
