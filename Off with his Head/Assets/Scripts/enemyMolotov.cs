@@ -3,14 +3,14 @@ using Unity.Mathematics;
 using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
-public class LookAtPlayer : MonoBehaviour
+public class enemyMolotov : MonoBehaviour
 {
     public GameObject player;
+    Rigidbody rb;
+    public int MaxSpeed = 1;
     void Start()
     {
-        //int x = Input.
-        //print(gameObject.name);
-        
+        rb = gameObject.GetComponent<Rigidbody>();
     }
     void Update()
     {
@@ -36,5 +36,9 @@ public class LookAtPlayer : MonoBehaviour
         //transform.LookAt(player.transform, Vector3.left);
         //transform.LookAt(player.transform.position);
         //transform.eulerAngles = new Vector3(90, 0, transform.eulerAngles.z);
+        if (rb.linearVelocity.magnitude < MaxSpeed && Vector3.Distance(transform.position,player.transform.position) > 7)
+        {
+            rb.AddForce(transform.up, ForceMode.Force);
+        }
     }
 }
