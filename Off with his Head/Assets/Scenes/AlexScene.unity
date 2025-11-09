@@ -605,7 +605,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &794729250
+--- !u!1 &684070045
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -613,22 +613,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 794729252}
-  - component: {fileID: 794729251}
+  - component: {fileID: 684070047}
+  - component: {fileID: 684070046}
   m_Layer: 0
-  m_Name: Molotov
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &794729251
+--- !u!212 &684070046
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794729250}
+  m_GameObject: {fileID: 684070045}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -670,7 +670,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9150943, g: 0.5191255, b: 0.082013145, a: 1}
+  m_Color: {r: 1, g: 0.6768428, b: 0.5377358, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -680,17 +680,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &794729252
+--- !u!4 &684070047
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794729250}
+  m_GameObject: {fileID: 684070045}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -6.72, y: 1, z: -0.7699985}
-  m_LocalScale: {x: 0.19999999, y: 0.39999998, z: 0.19999999}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269474771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8caf00394643ec2418c89cb897f41898, type: 3}
   m_Name: 
@@ -1362,6 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyMolotov
   player: {fileID: 1052944682}
+  molotovPrefab: {fileID: 2058242859504943972, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
   MaxSpeed: 1
 --- !u!1 &1464371353
 GameObject:
@@ -1978,6 +1979,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &7782916294859927404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2058242859504943972, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_Name
+      value: Molotov
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7699985
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175533838032855930, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 058d4d875d9230a4084512ede5c71cf9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1989,4 +2047,5 @@ SceneRoots:
   - {fileID: 1269474772}
   - {fileID: 1464371354}
   - {fileID: 1357102845}
-  - {fileID: 794729252}
+  - {fileID: 7782916294859927404}
+  - {fileID: 684070047}
