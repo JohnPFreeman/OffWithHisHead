@@ -20,7 +20,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private float batA = 0f;
     private float batV = 0f;
 
+    private Rigidbody rb;
 
+    private ForceMode forceMode = ForceMode.Acceleration;
 
     private SpriteRenderer spriteRenderer;
 
@@ -29,6 +31,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
+        rb = GetComponent<Rigidbody>();
+
+        
 
     }
 
@@ -73,6 +78,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
         //Debug.Log(rotateSpeed + ", " + angleDif);
 
         transform.localEulerAngles = new Vector3(90, rotation, 0);
+        //rb.rotation = Quaternion.Euler(90, rotation, 0);
+        
+
     }
 
     private void FixedUpdate()
@@ -90,7 +98,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
             batA = -springConst * angleDif;
             batV = (batV + batA) * airRes;
             rotation += batV;
-            
+
+            //rb.angularVelocity = new Vector3(0, batV, 0);
+
+
             if (Mathf.Abs(batV) < 2 && Mathf.Abs(angleDif) < 2)
             {
                 rotation = target;
