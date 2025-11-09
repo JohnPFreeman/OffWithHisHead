@@ -9,7 +9,7 @@ public class LookAtPlayer : MonoBehaviour
     void Start()
     {
         //int x = Input.
-        print(gameObject.name);
+        //print(gameObject.name);
         
     }
     void Update()
