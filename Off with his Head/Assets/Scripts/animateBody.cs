@@ -4,6 +4,7 @@ using UnityEngine;
 public class animateBody : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+
     public GameObject body;
     private char facing;
 
