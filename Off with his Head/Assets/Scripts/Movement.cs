@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     private GameManager gm;
 
     private Rigidbody rb;
-    private float moveSpeed = .25f;
+    private float moveSpeed = 5f;
     private Vector3 v;
 
     private bool xMostRecent = false;
@@ -90,7 +90,7 @@ public class Movement : MonoBehaviour
 
         v = v.normalized * moveSpeed * (headMode == isHead ? 1 : 0);
 
-        transform.position += v;
+        rb.linearVelocity = v;
 
 
     }
