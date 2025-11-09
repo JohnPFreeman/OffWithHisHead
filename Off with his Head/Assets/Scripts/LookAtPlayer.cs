@@ -9,30 +9,23 @@ public class LookAtPlayer : MonoBehaviour
     void Start()
     {
         //int x = Input.
-        print(gameObject.name);
+        //print(gameObject.name);
         
     }
     void Update()
     {
         float angle = 0;
-        //Quaternion direction = Quaternion.FromToRotation(player.transform.position, transform.position);
-        //direction.x = 90;
-        //direction.y = 0;
-        //direction.z = 0;
-        //direction.w = 1;
-        //transform.rotation = direction;
         if (player.transform.position.x >= transform.position.x)
-        {//} >= 1 ^ (player.transform.position.x - transform.position.x) < 1)
+        {
             
-                angle = (float)Math.Atan(player.transform.position.z - transform.position.z /
-                                            (player.transform.position.x - transform.position.x)* 360 / (2 * Math.PI) * (1));
+                angle = 270 + (float) (Math.Atan((player.transform.position.z - transform.position.z) /
+                                           (player.transform.position.x - transform.position.x)) * 360 / (2 * Math.PI));
             
         }
         else
         {
-            // if ((player.transform.position.z - transform.position.z) < 1 ^ (player.transform.position.x - transform.position.x) > 1)
-            angle = (float)(180 + Math.Atan((transform.position.z-player.transform.position.z) /
-                                        (transform.position.x-player.transform.position.x )) * 360 / (2 * Math.PI));
+            angle = 90 + (float)(Math.Atan((player.transform.position.z - transform.position.z) /
+                                        (player.transform.position.x - transform.position.x)) * 360 / (2 * Math.PI));
         }
         //else
         //{

@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
 
     public GameObject sprite;
 
+    public char facing = 'D';
+
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +85,6 @@ public class Movement : MonoBehaviour
         {
             updateRotation();
         }
-       
         
         
 
@@ -112,23 +113,27 @@ public class Movement : MonoBehaviour
     {
         if (v == new Vector3(1, 0, 0))
         {
-            sprite.transform.localEulerAngles = new Vector3(90, 90, 0);
-            Debug.Log("RIGHT");
+            //sprite.transform.localEulerAngles = new Vector3(90, 90, 0);
+            facing = 'R';
+            //Debug.Log("RIGHT");
                 
         } else if (v == new Vector3(-1, 0, 0))
         {
-            sprite.transform.localEulerAngles = new Vector3(90,-90, 0);
-            Debug.Log("LEFT");
+            //sprite.transform.localEulerAngles = new Vector3(90,-90, 0);
+            facing = 'L';
+            //Debug.Log("LEFT");
 
         } else if (v == new Vector3(0, 0, 1))
         {
-            sprite.transform.localEulerAngles = new Vector3(90, 0, 0);
-            Debug.Log("UP");
-
+            //sprite.transform.localEulerAngles = new Vector3(90, 0, 0);
+            facing = 'U';
+            //Debug.Log("UP");
+            
         } else if (v == new Vector3(0, 0, -1))
         {
-            sprite.transform.localEulerAngles = new Vector3(90, 180, 0);
-            Debug.Log("DOWN");
+            //sprite.transform.localEulerAngles = new Vector3(90, 180, 0);
+            facing = 'D';
+            //Debug.Log("DOWN");
 
         }
     }
