@@ -43,6 +43,6 @@ public class animateBody : MonoBehaviour
                 break;
         }
 
-        Debug.Log(facing + " -> " + spriteRenderer.sprite);
+        //Debug.Log(facing + " -> " + spriteRenderer.sprite);
     }
 }
