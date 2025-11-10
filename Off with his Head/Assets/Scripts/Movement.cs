@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
 
     private bool xMostRecent = false;
 
-    private bool headMode = false;
+    public bool headMode = false;
     public bool isHead = true;
 
     public GameObject sprite;
