@@ -112,7 +112,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         rotation %= 360;
         while (rotation < 0) rotation += 360;
 
-        Debug.Log("Rotation: " + rotation + ", BatV: " + batV + ", Angle Diff: " + angleDif);
+        //Debug.Log("Rotation: " + rotation + ", BatV: " + batV + ", Angle Diff: " + angleDif);
     }
 
 
