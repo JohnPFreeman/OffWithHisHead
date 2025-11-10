@@ -120,16 +120,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         rotation %= 360;
         while (rotation < 0) rotation += 360;
 
-        Debug.Log("Rotation: " + rotation + ", BatV: " + batV + ", Angle Diff: " + angleDif);
-
-        //if ((transform.rotation.eulerAngles.y-rotation) > 1)
-        //{
-        //    rb.AddTorque(new Vector3(90, transform.rotation.eulerAngles.y-rotation, 0)*1000, ForceMode.Force);
-        //}
-        //else if (rotation-transform.rotation.eulerAngles.y < 1)
-        //{
-        //    rb.AddTorque(new Vector3(90, rotation-transform.rotation.eulerAngles.y,0)*1000, ForceMode.Force);
-        //}
+        //Debug.Log("Rotation: " + rotation + ", BatV: " + batV + ", Angle Diff: " + angleDif);
     }
 
 
