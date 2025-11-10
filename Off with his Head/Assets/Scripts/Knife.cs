@@ -14,6 +14,13 @@ public class Knife : MonoBehaviour
     void Update()
     {
         double timeElapsed = (double)Time.time;
-        transform.localPosition = new Vector3(0, ((float)Math.Sin(timeElapsed*StabSpeed)+1.2f)/4, 0);
+        transform.localPosition = new Vector3(0, ((float)Math.Sin(timeElapsed * StabSpeed) + 1.2f) / 4, 0);
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<HitPoints>().hp -= 10;
+        }
     }
 }

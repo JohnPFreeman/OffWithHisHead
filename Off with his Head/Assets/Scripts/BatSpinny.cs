@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UIElements.Experimental;
@@ -77,12 +78,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         //Debug.Log(rotateSpeed + ", " + angleDif);
 
-        transform.localEulerAngles = new Vector3(90, rotation, 0);
+        transform.localEulerAngles = new Vector3(90, rotation, 0); //Worksish
         //rb.rotation = Quaternion.Euler(90, rotation, 0);
-        
 
     }
-
+    void OnCollisionEnter(Collision collision)
+    {
+        collision.rigidbody.AddForce((collision.gameObject.transform.position - transform.position) *
+        (batV < 10 ? 1 : batV * 10), ForceMode.Force);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<HitPoints>().hp -= (float) Math.Pow((double)Math.Abs(batV), (double)2.0)/40;
+        }
+    }
     private void FixedUpdate()
     {
         if (Input.GetMouseButton(0))
@@ -113,6 +121,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
         while (rotation < 0) rotation += 360;
 
         Debug.Log("Rotation: " + rotation + ", BatV: " + batV + ", Angle Diff: " + angleDif);
+
+        //if ((transform.rotation.eulerAngles.y-rotation) > 1)
+        //{
+        //    rb.AddTorque(new Vector3(90, transform.rotation.eulerAngles.y-rotation, 0)*1000, ForceMode.Force);
+        //}
+        //else if (rotation-transform.rotation.eulerAngles.y < 1)
+        //{
+        //    rb.AddTorque(new Vector3(90, rotation-transform.rotation.eulerAngles.y,0)*1000, ForceMode.Force);
+        //}
     }
 
 
