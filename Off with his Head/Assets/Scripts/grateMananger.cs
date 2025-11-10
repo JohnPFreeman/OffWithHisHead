@@ -24,13 +24,13 @@ public class grateMananger : MonoBehaviour
                 grateArray[l, w].GetComponent<SpriteRenderer>().enabled = false;
             }
         }
-        changeGrateState(1, 2);
-        changeGrateState(2, 3);
-        changeGrateState(2, 2);
-        changeGrateState(4, 2);
-        changeGrateState(3, 4);
-        changeGrateState(1, 4);
-        changeGrateState(3, 2);
+        //changeGrateState(1, 2); obsolete demo
+        //changeGrateState(2, 3);
+        //changeGrateState(2, 2);
+        //changeGrateState(4, 2);
+        //changeGrateState(3, 4);
+        //changeGrateState(1, 4);
+        //changeGrateState(3, 2);
     }
     public void changeGrateState(int row, int coll)
     {
