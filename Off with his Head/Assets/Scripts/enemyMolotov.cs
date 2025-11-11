@@ -15,9 +15,17 @@ public class enemyMolotov : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         player = GameObject.Find("Body");
+        if (player == null)
+        {
+            Destroy(gameObject);
+        }
     }
     void Update()
     {
+        if (player == null)
+        {
+            Destroy(gameObject);
+        }
         float angle = 0;
         if (player.transform.position.x >= transform.position.x)
         {
