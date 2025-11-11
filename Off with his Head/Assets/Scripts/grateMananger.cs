@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class grateMananger : MonoBehaviour
 {
     private int closedGrates = 5;
-    private int maxClosedGrates = length * width - 10;
+    private int maxClosedGrates = length * width*3/5;
     public static int length = 11;
     public static int width = 14;
     public GameObject gratePrefab;
@@ -49,7 +49,7 @@ public class grateMananger : MonoBehaviour
     }
     IEnumerator CycleClosedGrates()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(7f);
         for (int l = 0; l < length; l++)
         {
             for (int w = 0; w < width; w++)

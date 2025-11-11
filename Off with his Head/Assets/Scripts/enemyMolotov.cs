@@ -14,6 +14,7 @@ public class enemyMolotov : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        player = GameObject.Find("Body");
     }
     void Update()
     {
