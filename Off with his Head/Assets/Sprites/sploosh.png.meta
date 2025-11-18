@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: abbc475cceb392946a9a53e346b52f60
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sploosh_8
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1661
+        width: 1824
+        height: 958
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d18ed60a2df5a40a695d815a185d25
+      internalID: -822130110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_9
+      rect:
+        serializedVersion: 2
+        x: 4161
+        y: 1702
+        width: 1915
+        height: 932
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217de7b3f5836414ba65a620d695f374
+      internalID: -2079413953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1331
+        width: 1811
+        height: 1222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea90b32f62064ac4ca212e368668078a
+      internalID: -742999164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_4
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 23
+        width: 1233
+        height: 1500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3f1db494a362643a19b0344612803c
+      internalID: 1553753489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 264
+        width: 568
+        height: 702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830b272f848702446ad947332b3abdf7
+      internalID: -1486186804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 294
+        width: 673
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eda382cab2e6ef4eb0866023e1ef7be
+      internalID: -1896858735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_6
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 64
+        width: 1743
+        height: 1226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da769642d5dfe594ea305d9ec9c5e2ad
+      internalID: 258387262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 257
+        width: 508
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be80910e645dd642a66e7310ebbaca3
+      internalID: -1722380578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sploosh_5
+      rect:
+        serializedVersion: 2
+        x: 5342
+        y: 0
+        width: 1665
+        height: 1217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ed9f916d50dc24ca260552f0b0a0f8
+      internalID: -1587392262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 18777027463a1bd4bb4f116e2c2df385
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      sploosh_1: -1722380578
+      sploosh_10: -4269437
+      sploosh_100: -745266620
+      sploosh_101: 622744454
+      sploosh_102: 683855492
+      sploosh_104: -1790963909
+      sploosh_105: -1231177812
+      sploosh_106: 1557353055
+      sploosh_108: 729652245
+      sploosh_109: 756440126
+      sploosh_11: 1053456273
+      sploosh_110: 1356459868
+      sploosh_111: 1960369394
+      sploosh_112: -248270075
+      sploosh_113: 773694833
+      sploosh_114: 1818086748
+      sploosh_115: 788369617
+      sploosh_116: -521503940
+      sploosh_117: 1889110801
+      sploosh_118: 1674083292
+      sploosh_119: -379041823
+      sploosh_12: 167759358
+      sploosh_120: 1223296306
+      sploosh_121: -2098224484
+      sploosh_122: -1435059431
+      sploosh_123: -671385629
+      sploosh_124: 296852670
+      sploosh_125: -2064888702
+      sploosh_126: 1389288127
+      sploosh_127: 1808561492
+      sploosh_128: -1661272338
+      sploosh_129: -561035689
+      sploosh_13: -39183501
+      sploosh_130: -1972448171
+      sploosh_131: -1491192709
+      sploosh_132: 671167577
+      sploosh_133: 1894555709
+      sploosh_134: -1076746695
+      sploosh_135: 139199776
+      sploosh_136: -1478838048
+      sploosh_137: -172779571
+      sploosh_138: 131611679
+      sploosh_139: -1363052653
+      sploosh_14: -1884999173
+      sploosh_140: 788059906
+      sploosh_141: 1438037706
+      sploosh_142: -699150870
+      sploosh_15: 1786974106
+      sploosh_16: 1304394631
+      sploosh_17: -247598868
+      sploosh_18: 1425815736
+      sploosh_19: -1928143050
+      sploosh_2: -1486186804
+      sploosh_20: -1798596981
+      sploosh_21: -502101926
+      sploosh_22: -168572758
+      sploosh_23: -1768457641
+      sploosh_24: -1455987
+      sploosh_25: -1711945449
+      sploosh_26: 1536851831
+      sploosh_27: -37013546
+      sploosh_28: -845281405
+      sploosh_3: -1896858735
+      sploosh_30: -1680929889
+      sploosh_31: 1917417863
+      sploosh_32: -1377526873
+      sploosh_34: -1181865097
+      sploosh_35: -314391418
+      sploosh_37: -1698905730
+      sploosh_38: -1454151085
+      sploosh_39: -448963360
+      sploosh_4: 1553753489
+      sploosh_40: 407434963
+      sploosh_41: -297471656
+      sploosh_42: 1183620817
+      sploosh_43: -1564310330
+      sploosh_44: -1567034563
+      sploosh_45: -686418636
+      sploosh_46: 1347422364
+      sploosh_47: -1757996953
+      sploosh_48: 1542673187
+      sploosh_49: 664199045
+      sploosh_5: -1587392262
+      sploosh_50: -283253343
+      sploosh_51: -1650972694
+      sploosh_52: 1862990982
+      sploosh_53: 1958337817
+      sploosh_54: 220406815
+      sploosh_55: -210058419
+      sploosh_56: 868125698
+      sploosh_57: -1359400702
+      sploosh_58: -407909942
+      sploosh_59: 1125749645
+      sploosh_6: 258387262
+      sploosh_60: -2065068046
+      sploosh_61: 2089831545
+      sploosh_62: -562640474
+      sploosh_63: 1290892637
+      sploosh_64: 514630987
+      sploosh_65: -890131378
+      sploosh_66: -1772764259
+      sploosh_67: -1588417578
+      sploosh_68: -1711514308
+      sploosh_69: -1610069958
+      sploosh_7: -742999164
+      sploosh_70: -960788030
+      sploosh_71: -1416396881
+      sploosh_72: 1580673771
+      sploosh_73: -882662234
+      sploosh_74: -1217639355
+      sploosh_75: -2125634156
+      sploosh_76: -824974438
+      sploosh_77: -110316009
+      sploosh_78: 1669936597
+      sploosh_79: 2084512664
+      sploosh_8: -822130110
+      sploosh_81: -1130400026
+      sploosh_82: -2077379628
+      sploosh_83: 274134327
+      sploosh_84: 2121437402
+      sploosh_85: -1420306408
+      sploosh_86: 1678749413
+      sploosh_87: -1343521515
+      sploosh_88: -1966743259
+      sploosh_89: 1821611886
+      sploosh_9: -2079413953
+      sploosh_90: -1984008348
+      sploosh_91: -45987369
+      sploosh_92: -51836381
+      sploosh_93: -248172778
+      sploosh_96: 922216997
+      sploosh_97: 1791348036
+      sploosh_99: -184587984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

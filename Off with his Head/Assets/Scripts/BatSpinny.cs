@@ -23,7 +23,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private Rigidbody rb;
 
-    private ForceMode forceMode = ForceMode.Acceleration;
+    //private ForceMode forceMode = ForceMode.Acceleration;
 
     private SpriteRenderer spriteRenderer;
 
@@ -43,6 +43,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     { 
 
         facing = body.GetComponent<Movement>().facing;
+
+        rb.linearVelocity = Vector3.zero;
+
         switch (facing)
         {
             case 'D':
@@ -86,6 +89,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         collision.rigidbody.AddForce((collision.gameObject.transform.position - transform.position) *
         (batV < 10 ? 1 : batV * 10), ForceMode.Force);
+        if (!collision.gameObject) { return; }
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<HitPoints>().hp -= (float) Math.Pow((double)Math.Abs(batV), (double)2.0)/40;
